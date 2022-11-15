@@ -212,7 +212,22 @@
 								padding: 2em 4em;
 								font-size: 1.2em;
 								h3 {
+									.interactive;
+									display: flex;
+									justify-content: space-between;
+									align-items: center;
+									text-align: left;
+									width: 100%;
 									margin-bottom: 1em;
+									cursor: pointer;
+									line-height: 1;
+									&:after {
+										content: '';
+										width: 1.2em;
+										height: 1.2em;
+										background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHZpZXdCb3g9IjAgMCA1MiA1MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIgZmlsbD0iIzEwMjg1NiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjUuMjM2NiAxOS4zNTQxTDE0LjIzNjYgMzIuMzU0MUwxNS43NjM0IDMzLjY0NkwyNiAyMS41NDgyTDM2LjIzNjYgMzMuNjQ2TDM3Ljc2MzQgMzIuMzU0MUwyNi43NjM0IDE5LjM1NDFDMjYuNTczNCAxOS4xMjk2IDI2LjI5NDIgMTkuMDAwMSAyNiAxOS4wMDAxQzI1LjcwNTkgMTkuMDAwMSAyNS40MjY2IDE5LjEyOTYgMjUuMjM2NiAxOS4zNTQxWiIgZmlsbD0id2hpdGUiLz48L3N2Zz4K") center no-repeat;
+										background-size: 90%;
+									}
 								}
 							}
 						}

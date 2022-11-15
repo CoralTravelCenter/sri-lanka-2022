@@ -66,3 +66,7 @@ ASAP ->
         else
             $card.next().slideUp()
 
+    $('.poi-details h3').on 'click', (e) ->
+        $this = $(this)
+        $card = $this.closest('.poi-details')
+        $card.slideUp().prev().removeClass('open')

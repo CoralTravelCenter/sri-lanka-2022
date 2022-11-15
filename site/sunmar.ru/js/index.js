@@ -119,7 +119,7 @@ Number.prototype.zeroPad = function(len, c) {
 };
 
 ASAP(function() {
-  return $('.poi-short .more').on('click', function(e) {
+  $('.poi-short .more').on('click', function(e) {
     var $card, $this;
     $this = $(this);
     $card = $this.closest('.poi-short');
@@ -130,5 +130,11 @@ ASAP(function() {
     } else {
       return $card.next().slideUp();
     }
+  });
+  return $('.poi-details h3').on('click', function(e) {
+    var $card, $this;
+    $this = $(this);
+    $card = $this.closest('.poi-details');
+    return $card.slideUp().prev().removeClass('open');
   });
 });
