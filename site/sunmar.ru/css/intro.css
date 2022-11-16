@@ -367,8 +367,11 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
 #site-wrap section.poi > .contenu .poi-list .poi-short,
 #site-wrap section.poi > .contenu .poi-list .poi-details {
   padding: 0.5em;
-  background-color: white;
   overflow: hidden;
+}
+#site-wrap section.poi > .contenu .poi-list .poi-short .pad,
+#site-wrap section.poi > .contenu .poi-list .poi-details .pad {
+  background-color: white;
 }
 #site-wrap section.poi > .contenu .poi-list .poi-short h3,
 #site-wrap section.poi > .contenu .poi-list .poi-details h3 {
